@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h2>Welcome to Patient Management System!</h2>
+
+<a href="https://localhost:7189/Admin/Index"><button>Admin</button></a>
+<a href="https://localhost:7189/Patients/Login"><button>User</button></a>
+
+    @* @if (User.IsInRole("Admin"))
+    {
+        <a asp-controller="Admin" asp-action="Index" class="btn btn-primary">Admin</a>
+    }
+
+    @if (User.IsInRole("User"))
+    {
+        <a asp-controller="Patients" asp-action="Login" class="btn btn-success">User</a>
+    }
+</div>*@ 
